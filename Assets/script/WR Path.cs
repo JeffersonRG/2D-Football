@@ -4,27 +4,32 @@ using UnityEngine;
 
 public class PathFollow : MonoBehaviour
 {
-    public Transform[] waypoints;
-    public float speed = 5.0f;
-    private int currentWaypoint = 0;
+    public Transform[] waypoints; // Array to store waypoints
+    public float speed = 2.0f; // Speed of movement
+    private int currentWaypoint = 0; // Current waypoint index
 
-    private void Start()
-    {
-        
-    }
-
-    void Update()
+    private void Update()
     {
         if (currentWaypoint < waypoints.Length)
         {
-            // Move towards the current waypoint
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].position, speed * Time.deltaTime);
+            // Move the object towards the current waypoint
+            transform.position = Vector3.Lerp(
+                transform.position,
+                waypoints[currentWaypoint].position,
+                speed * Time.deltaTime
+            );
 
-            // Check if the object has reached the current waypoint
-            if (transform.position == waypoints[currentWaypoint].position)
+            // Check if the object is close enough to the current waypoint
+            if (Vector3.Distance(transform.position, waypoints[currentWaypoint].position) < 0.1f)
             {
-                currentWaypoint++; // Move to the next waypoint
+                // Move to the next waypoint
+                currentWaypoint++;
             }
+        }
+        else
+        {
+            // When reached the end of the path, reset to the beginning
+            
         }
     }
 }
