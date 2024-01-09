@@ -507,8 +507,9 @@ GameObject:
   - component: {fileID: 188155650}
   - component: {fileID: 188155651}
   - component: {fileID: 188155652}
+  - component: {fileID: 188155653}
   m_Layer: 7
-  m_Name: Linemen
+  m_Name: Lineman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,6 +668,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &188155653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188155647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd766b1181140004a95e4b7297f51510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReductionFactor: 0.5
 --- !u!1 &222479841
 GameObject:
   m_ObjectHideFlags: 3
@@ -2263,8 +2277,8 @@ GameObject:
   - component: {fileID: 740120876}
   - component: {fileID: 740120877}
   - component: {fileID: 740120879}
-  - component: {fileID: 740120878}
   - component: {fileID: 740120880}
+  - component: {fileID: 740120881}
   m_Layer: 6
   m_Name: Enemy Line
   m_TagString: Untagged
@@ -2384,20 +2398,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.621025, y: 5.834841}
   m_EdgeRadius: 0
---- !u!114 &740120878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740120874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 968992155}
-  moveSpeed: 3
 --- !u!50 &740120879
 Rigidbody2D:
   serializedVersion: 4
@@ -2437,6 +2437,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3e6a4dd06a7e24d989dcd6fca9ff69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &740120881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740120874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 968992155}
+  moveSpeed: 3
 --- !u!1 &764944450
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,8 +3199,9 @@ GameObject:
   - component: {fileID: 1012008673}
   - component: {fileID: 1012008674}
   - component: {fileID: 1012008675}
+  - component: {fileID: 1012008676}
   m_Layer: 7
-  m_Name: Linemen (2)
+  m_Name: Lineman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3345,6 +3360,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1012008676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012008669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd766b1181140004a95e4b7297f51510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReductionFactor: 0.5
 --- !u!1 &1045316955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,9 +3446,9 @@ GameObject:
   - component: {fileID: 1072427668}
   - component: {fileID: 1072427669}
   - component: {fileID: 1072427670}
-  - component: {fileID: 1072427671}
   - component: {fileID: 1072427672}
   - component: {fileID: 1072427673}
+  - component: {fileID: 1072427674}
   m_Layer: 6
   m_Name: Enemy Line (2)
   m_TagString: Untagged
@@ -3540,20 +3568,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.621025, y: 5.834841}
   m_EdgeRadius: 0
---- !u!114 &1072427671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072427667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 968992155}
-  moveSpeed: 3
 --- !u!50 &1072427672
 Rigidbody2D:
   serializedVersion: 4
@@ -3593,6 +3607,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3e6a4dd06a7e24d989dcd6fca9ff69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1072427674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072427667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 968992155}
+  moveSpeed: 3
 --- !u!1 &1148263482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,9 +4395,9 @@ GameObject:
   - component: {fileID: 1859555801}
   - component: {fileID: 1859555802}
   - component: {fileID: 1859555803}
-  - component: {fileID: 1859555804}
   - component: {fileID: 1859555805}
   - component: {fileID: 1859555806}
+  - component: {fileID: 1859555807}
   m_Layer: 6
   m_Name: Enemy Line (1)
   m_TagString: Untagged
@@ -4489,20 +4517,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.621025, y: 5.834841}
   m_EdgeRadius: 0
---- !u!114 &1859555804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859555800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 968992155}
-  moveSpeed: 3
 --- !u!50 &1859555805
 Rigidbody2D:
   serializedVersion: 4
@@ -4542,6 +4556,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3e6a4dd06a7e24d989dcd6fca9ff69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1859555807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859555800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3127c0689778eb24d88582616f2f1a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 968992155}
+  moveSpeed: 3
 --- !u!1 &1912130013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,8 +4906,9 @@ GameObject:
   - component: {fileID: 1936758188}
   - component: {fileID: 1936758189}
   - component: {fileID: 1936758190}
+  - component: {fileID: 1936758191}
   m_Layer: 7
-  m_Name: Linemen (1)
+  m_Name: Lineman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5038,6 +5067,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1936758191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936758184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd766b1181140004a95e4b7297f51510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReductionFactor: 0.5
 --- !u!1 &2070011549
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,8 +5093,9 @@ GameObject:
   - component: {fileID: 2070011553}
   - component: {fileID: 2070011554}
   - component: {fileID: 2070011555}
+  - component: {fileID: 2070011556}
   m_Layer: 7
-  m_Name: C
+  m_Name: Lineman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5211,6 +5254,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2070011556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070011549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd766b1181140004a95e4b7297f51510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedReductionFactor: 0.5
 --- !u!1 &2130352451
 GameObject:
   m_ObjectHideFlags: 0
