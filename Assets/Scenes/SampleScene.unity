@@ -3140,8 +3140,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToThrow: {fileID: 6409542024214544186, guid: cad5f26342d854f4dbbd453a2e8f3968, type: 3}
-  targetObject: {fileID: 1168198022}
-  throwKey: 257
+  targetObject:
+  - {fileID: 1168198022}
+  - {fileID: 564972319}
+  - {fileID: 251699829}
+  - {fileID: 1912130013}
+  - {fileID: 2136172371}
+  throwKeys: 0101000002010000030100000401000005010000
   throwSpeed: 20
 --- !u!114 &968992160
 MonoBehaviour:
