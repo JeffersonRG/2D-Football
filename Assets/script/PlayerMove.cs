@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    private float minX = -113.0f, maxX = -6.0f, minY = -25.0f, maxY = 3.0f;
+    private float minX = -79.0f, maxX = -15.0f, minY = -24.0f, maxY = -0.5f;
 
     // Start is called before the first frame update
     void Start()
